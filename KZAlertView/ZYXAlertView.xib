@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZYXAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="404"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23V-2I-BZf">
+                    <rect key="frame" x="20" y="25" width="395" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="bnZ-gl-Ks5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.29411764705882354" green="0.69803921568627447" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7z-0F-x43">
+                    <rect key="frame" x="20" y="52" width="395" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="mRD-1P-ovV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4R-dV-8cS" customClass="ZYXButton">
+                    <rect key="frame" x="150" y="79" width="134" height="45"/>
+                    <color key="backgroundColor" red="0.29411764709999999" green="0.69803921570000005" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="134" id="bK4-8L-Od5"/>
+                        <constraint firstAttribute="height" constant="45" id="bUv-Nu-q7g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="alertButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Byn-v7-4ax"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQq-5c-vmk" customClass="ZYXButton">
+                    <rect key="frame" x="20" y="79" width="183" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="M6N-AC-HA3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="alertButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hr3-VU-1Ss"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bew-X7-c08" customClass="ZYXButton">
+                    <rect key="frame" x="233" y="79" width="182" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Mcp-VG-EnQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="alertButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="y6K-Z0-gr6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="D7z-0F-x43" secondAttribute="trailing" constant="20" id="4lr-PU-pjy"/>
+                <constraint firstItem="D7z-0F-x43" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="DWw-X0-lLa"/>
+                <constraint firstAttribute="trailing" secondItem="23V-2I-BZf" secondAttribute="trailing" constant="20" id="Dw8-Nk-onW"/>
+                <constraint firstItem="bQq-5c-vmk" firstAttribute="width" secondItem="bew-X7-c08" secondAttribute="width" id="E2V-r3-NCt"/>
+                <constraint firstItem="D7z-0F-x43" firstAttribute="top" secondItem="23V-2I-BZf" secondAttribute="bottom" constant="27" id="GA4-Ly-6Ne"/>
+                <constraint firstItem="bQq-5c-vmk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="RVf-KY-62p"/>
+                <constraint firstItem="bew-X7-c08" firstAttribute="leading" secondItem="bQq-5c-vmk" secondAttribute="trailing" constant="30" id="S6h-Nd-H5h"/>
+                <constraint firstItem="bew-X7-c08" firstAttribute="top" secondItem="D7z-0F-x43" secondAttribute="bottom" constant="27" id="WBf-mB-okK"/>
+                <constraint firstItem="N4R-dV-8cS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WlB-Q9-xer"/>
+                <constraint firstAttribute="trailing" secondItem="bew-X7-c08" secondAttribute="trailing" constant="20" id="ZuU-3c-MTs"/>
+                <constraint firstItem="23V-2I-BZf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="kTk-Kd-Smg"/>
+                <constraint firstItem="bQq-5c-vmk" firstAttribute="top" secondItem="D7z-0F-x43" secondAttribute="bottom" constant="27" id="opi-F8-gHZ"/>
+                <constraint firstItem="N4R-dV-8cS" firstAttribute="top" secondItem="D7z-0F-x43" secondAttribute="bottom" constant="27" id="paX-D6-xVi"/>
+                <constraint firstItem="23V-2I-BZf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="r0t-sC-MPh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cancleButton" destination="bQq-5c-vmk" id="A38-Sd-juF"/>
+                <outlet property="distance" destination="GA4-Ly-6Ne" id="i99-c8-aTR"/>
+                <outlet property="firstTitle" destination="23V-2I-BZf" id="tpo-Hk-oTz"/>
+                <outlet property="onlySureButton" destination="N4R-dV-8cS" id="rxs-Of-TXY"/>
+                <outlet property="secondTitle" destination="D7z-0F-x43" id="Io1-fn-JfK"/>
+                <outlet property="sureButton" destination="bew-X7-c08" id="uEa-4O-Y6W"/>
+            </connections>
+            <point key="canvasLocation" x="239.5" y="351"/>
+        </view>
+    </objects>
+</document>
