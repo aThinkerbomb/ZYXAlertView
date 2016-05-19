@@ -55,8 +55,6 @@
                 cancelTitle:(NSString *)canceltitle
 {
     
-    [self hiddenButton];
-    
     [_firstTitle setText:title];
     [_firstTitle sizeToFit];
     [_distance setConstant: title ? 27 : 0];
@@ -129,25 +127,18 @@
 }
 
 
-- (void)hiddenButton
-{
-    self.onlySureButton.hidden = YES;
-    self.cancleButton.hidden = YES;
-    self.sureButton.hidden = YES;
-}
-
 - (void)showOnlySureButton
 {
-    self.onlySureButton.hidden = NO;
-    self.cancleButton.hidden = YES;
-    self.sureButton.hidden = YES;
+    [[self onlySureButton] setHidden:NO];
+    [[self cancleButton] setHidden:YES];
+    [[self sureButton] setHidden:YES];
 }
 
 - (void)showSureAndCancelButton
 {
-    self.onlySureButton.hidden = YES;
-    self.cancleButton.hidden = NO;
-    self.sureButton.hidden = NO;
+    [[self onlySureButton] setHidden:YES];
+    [[self cancleButton] setHidden:NO];
+    [[self sureButton] setHidden:NO];
 }
 
 /*

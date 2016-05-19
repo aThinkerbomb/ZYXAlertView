@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol ZYXAlertViewDelegate;
+//@protocol ZYXAlertViewDelegate;
 
 typedef void(^clickedButtonBlock) (NSInteger index);
 
 @interface ZYXAlertView : UIView
 
 
-@property (nonatomic, assign) id<ZYXAlertViewDelegate>delegate;
+//@property (nonatomic, assign) id<ZYXAlertViewDelegate>delegate;
 
 @property (nonatomic, copy) clickedButtonBlock buttonAction;
 
@@ -29,8 +29,8 @@ typedef void(^clickedButtonBlock) (NSInteger index);
 
 @end
 
-@protocol ZYXAlertViewDelegate <NSObject>
-
-- (void)ZYXAlertView:(ZYXAlertView *)AlertView clickedButtonIndex:(NSInteger)index;
-
-@end
+//@protocol ZYXAlertViewDelegate <NSObject>
+//
+//- (void)ZYXAlertView:(ZYXAlertView *)AlertView clickedButtonIndex:(NSInteger)index;
+//
+//@end
